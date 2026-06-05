@@ -8,7 +8,7 @@
 void makeTree(BST<std::string>& tree, const char* filename) {
   std::ifstream file(filename);
 
-  if (!file) {
+  if (!file.is_open()) {
     return;
   }
 
